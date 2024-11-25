@@ -1,4 +1,5 @@
 import 'package:hive_flutter/hive_flutter.dart';
+
 part 'music_model.g.dart';
 
 @HiveType(typeId: 1)
@@ -11,6 +12,7 @@ class MusicModel {
     title = json['title'];
     artist = json['artist'];
   }
+
   @HiveField(0)
   String? id;
   @HiveField(1)
