@@ -65,9 +65,6 @@ class ScreenSplashController extends GetxController {
     }
   }
 
-
-
-
   // Future<dynamic> getAllAudios() async {
   //   final List<Object?>? audios =
   //       await audioChannel.invokeMethod<List<Object?>>('getAudios');
@@ -86,13 +83,15 @@ class ScreenSplashController extends GetxController {
   Future<dynamic> getAllAudios() async {
     try {
       print("Fetching audio data...");
-      final List<Object?>? audios = await audioChannel.invokeMethod<List<Object?>>('getAudios');
+      final List<Object?>? audios =
+          await audioChannel.invokeMethod<List<Object?>>('getAudios');
       if (audios == null || audios.isEmpty) {
         print("No audio data retrieved.");
         return;
       }
       for (int i = 0; i < audios.length; i++) {
-        final MusicModel musicModelaudio = MusicModel.fromJson(HashMap.from(audios[i] as Map<dynamic, dynamic>));
+        final MusicModel musicModelaudio = MusicModel.fromJson(
+            HashMap.from(audios[i] as Map<dynamic, dynamic>));
         allMusicModelSongs.add(musicModelaudio);
       }
       print("Fetched ${allMusicModelSongs.length} audio files.");
@@ -101,8 +100,6 @@ class ScreenSplashController extends GetxController {
       print("Error fetching audios: $e");
     }
   }
-
-
 
   Future<void> addAudiosToDB() async {
     await musicDB.put('all_songs', allMusicModelSongs);

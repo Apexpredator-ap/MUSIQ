@@ -6,7 +6,7 @@ import 'package:get/get.dart';
 import '../../controller/favorite_screen/screen_favourites_controller.dart';
 import '../../controller/splash_screen/screen_splash.dart';
 import '../../core/colors.dart';
-import '../widgets.dart';
+import '../../widgets/widgets.dart';
 
 // class ScreenAddToFavourits extends StatelessWidget {
 //   const ScreenAddToFavourits({super.key});

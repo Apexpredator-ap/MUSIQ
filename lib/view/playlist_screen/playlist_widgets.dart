@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../controller/playlist_Screen/screen_playlist_controller.dart';
 import '../../core/colors.dart';
-import '../widgets.dart';
+import '../../widgets/widgets.dart';
 
 TextEditingController playlistTextController = TextEditingController();
 final PlaylistController playlistController = Get.put(PlaylistController());

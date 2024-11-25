@@ -10,7 +10,7 @@ import '../../core/colors.dart';
 import '../favourite_screen/screen_favourite.dart';
 import '../mini_player/mini_player.dart';
 import '../play_screen/screen_play.dart';
-import '../widgets.dart';
+import '../../widgets/widgets.dart';
 import 'screen_add_to_playlist.dart';
 
 class ScreenPlaylistAudios extends StatelessWidget {

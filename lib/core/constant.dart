@@ -1,3 +1,3 @@
-const String appName = 'Musik';
+const String appName = 'MusiQ';
 const String privacyPolicyContent =
-    'At Musik, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by  Musik and how we use it.If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.';
+    "This Offline Music Player app respects your privacy. We collect minimal device information like your device model and operating system version to ensure compatibility and troubleshoot issues. Your music files remain private on your device. We do not access or share your personal information with any third-party services.";

@@ -10,7 +10,7 @@ import '../../model/music_model.dart';
 import '../favourite_screen/screen_favourite.dart';
 import '../home_screen/screen_home_bottomsheet.dart';
 import '../play_screen/screen_play.dart';
-import '../widgets.dart';
+import '../../widgets/widgets.dart';
 
 class MusicSearch extends SearchDelegate<dynamic> {
   final HomeScreenController _homeScreenController =

@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../../controller/favorite_screen/screen_favourites_controller.dart';
 import '../../controller/splash_screen/screen_splash.dart';
 import '../../core/colors.dart';
 import '../playlist_screen/screen_add_to_playlist.dart';
-import '../widgets.dart';
+import '../../widgets/widgets.dart';
 
 class HomeBottomSheet extends StatelessWidget {
   HomeBottomSheet({super.key, required this.id, this.index});
+
   final String id;
   final int? index;
 
@@ -39,13 +41,28 @@ class HomeBottomSheet extends StatelessWidget {
               if (tempFavouriteList.contains(id)) {
                 Get.defaultDialog(
                   title: 'Alert',
-                  content: const Text('Do you want to remove?'),
+                  content: Text(
+                    'Do you want to remove?',
+                    style: GoogleFonts.jost(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                   cancel: ElevatedButton(
-                    child: const Text('Cancel'),
+                    child: Text(
+                      'Cancel',
+                      style: GoogleFonts.jost(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                     onPressed: () => Get.back(),
                   ),
                   confirm: ElevatedButton(
-                    child: const Text('Confirm'),
+                    child: Text(
+                      'Confirm',
+                      style: GoogleFonts.jost(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                     onPressed: () {
                       favouritesController.favouritesRemove(id);
 

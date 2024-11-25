@@ -8,7 +8,7 @@ import '../../controller/play_screen/screen_play_controller.dart';
 import '../../controller/splash_screen/screen_splash.dart';
 import '../../core/colors.dart';
 import '../playlist_screen/screen_add_to_playlist.dart';
-import '../widgets.dart';
+import '../../widgets/widgets.dart';
 
 RealtimePlayingInfos? realtimePlayingInfos1;
 

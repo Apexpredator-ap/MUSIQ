@@ -6,7 +6,7 @@ import '../../controller/home_screen/home_screen_controller.dart';
 import '../../controller/splash_screen/screen_splash.dart';
 import '../../core/colors.dart';
 import '../play_screen/screen_play.dart';
-import '../widgets.dart';
+import '../../widgets/widgets.dart';
 
 class MiniPlayer extends StatelessWidget {
   MiniPlayer({super.key});

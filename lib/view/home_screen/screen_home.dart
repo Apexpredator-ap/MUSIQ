@@ -2,6 +2,7 @@ import 'package:assets_audio_player/assets_audio_player.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 import '../../controller/home_screen/home_screen_controller.dart';
 import '../../core/colors.dart';
 import '../favourite_screen/screen_addtofavourite.dart';
@@ -10,7 +11,7 @@ import '../mini_player/mini_player.dart';
 import '../playlist_screen/playlist_widgets.dart';
 import '../playlist_screen/screen_playlist.dart';
 import '../screen_search/screen_search.dart';
-import '../widgets.dart';
+import '../../widgets/widgets.dart';
 import 'home_widgets.dart';
 import 'screen_drawer.dart';
 
@@ -73,7 +74,13 @@ class ScreenHomeMain extends StatelessWidget {
                   child: DrawerContent(),
                 ),
                 appBar: AppBar(
-                  title: const Text('Music Player'),
+                  title: Text(
+                    'Music Player',
+                    style: GoogleFonts.jost(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 30,
+                        color: Colors.blue),
+                  ),
                   centerTitle: true,
                   backgroundColor: kAppbarColor,
                   bottom: TabBar(
@@ -142,19 +149,39 @@ Future<bool> _onBackButtonPressed(BuildContext context) async {
     context: context,
     builder: (BuildContext context) {
       return AlertDialog(
-        title: const Text('Really'),
-        content: const Text('Do you want to close the app?'),
+        title: Text(
+          'Really',
+          style: GoogleFonts.jost(
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        content: Text(
+          'Do you want to close the app?',
+          style: GoogleFonts.jost(
+            fontWeight: FontWeight.bold,
+          ),
+        ),
         actions: <Widget>[
           TextButton(
               onPressed: () {
                 Get.back();
               },
-              child: const Text('No')),
+              child: Text(
+                'No',
+                style: GoogleFonts.jost(
+                  fontWeight: FontWeight.bold,
+                ),
+              )),
           TextButton(
               onPressed: () {
                 SystemNavigator.pop();
               },
-              child: const Text('Yes'))
+              child: Text(
+                'Yes',
+                style: GoogleFonts.jost(
+                  fontWeight: FontWeight.bold,
+                ),
+              ))
         ],
       );
     },

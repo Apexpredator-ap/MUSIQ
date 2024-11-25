@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import '../../controller/playlist_Screen/screen_playlist_controller.dart';
 
 import '../../core/colors.dart';
-import '../widgets.dart';
+import '../../widgets/widgets.dart';
 import 'playlist_widgets.dart';
 import 'screen_playlist_songs.dart';
 

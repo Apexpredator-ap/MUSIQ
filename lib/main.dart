@@ -15,14 +15,12 @@ Future<void> main() async {
     Hive.registerAdapter(MusicModelAdapter());
   }
 
-
   musicDB = await Hive.openBox('music_db');
   favouriteDB = await Hive.openBox('favourite_box');
   playlistDB = await Hive.openBox('playlist_box');
 
   runApp(const MusicApp());
 }
-
 
 class MusicApp extends StatelessWidget {
   const MusicApp({super.key});
